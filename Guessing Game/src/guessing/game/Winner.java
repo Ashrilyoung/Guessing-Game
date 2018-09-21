@@ -7,27 +7,22 @@ package guessing.game;
 
 /**
  *
- * @author 16007873
+ * @author 16007873 21/09/2018
+ * This class declares a winner based off the winnerno
+ * 
  */
 public class Winner {
     
-        public static int gamewinner(int x){   //pass the winnerno to this class 
-           
-            switch (x){           //more simple version of an if statement
-            case 1:
-                System.out.println("PLayer 1 wins!");      //display message for players
-                break;
-            case 2:
-                System.out.println("PLayer 2 wins!");       //display message for players
-                break;
-            case 3:
-                System.out.println("PLayer 3 wins!");       //display message for players
-                break;
-            default:
-                System.out.println("You have all lost!");       //display message for players
-                break;
-        }
-            return x;    //return the winner no
+        public static boolean Winner(boolean b, int x){   //pass the winnerno to this class 
+            
+            if (b == true){
+                System.out.println("Player "+x+" wins!"); 
+                return b;
+            }
+            else{
+                System.out.println("Player "+x+" loses!"); 
+                return b;
+            }
                     
         }
 }
