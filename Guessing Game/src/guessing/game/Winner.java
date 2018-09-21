@@ -15,12 +15,12 @@ public class Winner {
     
         public static boolean Winner(boolean b, int x){   //pass the winnerno to this class 
             
-            if (b == true){
-                System.out.println("Player "+x+" wins!"); 
+            if (b == true){                                 //if the boolean is true
+                System.out.println("Player "+x+" wins!");       //display player wins
                 return b;
             }
             else{
-                System.out.println("Player "+x+" loses!"); 
+                System.out.println("Player "+x+" loses!");      //display p[layer loses
                 return b;
             }
                     

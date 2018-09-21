@@ -14,17 +14,15 @@ package guessing.game;
 public class Result {
     
             public static boolean Result(int x, int y){             //function to calculate the winner of the game
-                boolean win = false;
-                if (x == y){
-                    win = true;
-                    return win; 
+                boolean win = false;                                //set win to flase to begin with
+                if (x == y){                                        //if the players number is equal to the random number
+                    win = true;         //the player has won    
+                    return win;         //return the boolean
                 }
-                else{
+                else{                   //otherwise return false
                     win = false;
                     return win;
                 }
-                
-                             //return the winnerno
        
             }
 }
