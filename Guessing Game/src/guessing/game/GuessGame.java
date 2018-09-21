@@ -39,38 +39,41 @@ public class GuessGame {
             pno3 = playerguess;
         }
         
-        winnerno = calcResult(pno1, pno2, pno3, random);
+        winnerno = Result.calcResult(pno1, pno2, pno3, random);
         
-        if (winnerno == 1){
-            System.out.println("PLayer 1 wins!");
-        }
-        else if(winnerno == 2){
-            System.out.println("PLayer 2 wins!");
-        }
-        else if(winnerno == 3){
-            System.out.println("PLayer 3 wins!");
-        }
-        else{
-            System.out.println("You have all lost!");
-        }
+        Winner.gamewinner(winnerno);
+        
+//        switch (winnerno) {
+//            case 1:
+//                System.out.println("PLayer 1 wins!");
+//                break;
+//            case 2:
+//                System.out.println("PLayer 2 wins!");
+//                break;
+//            case 3:
+//                System.out.println("PLayer 3 wins!");
+//                break;
+//            default:
+//                System.out.println("You have all lost!");
+//                break;
+//        }
     }
     
-        public static int calcResult(int x, int y,int a, int b){             //function to calculate total of 2 passed ints
-            int winnerno = 0;
-            
-            if(x ==  b){
-                winnerno = 1;
-            }
-            else if(y ==  b){
-                winnerno = 2;
-            }
-            else if(a ==  b){
-                winnerno = 3;
-            }
-            else{
-                winnerno = 4;
-            }
-            System.out.println(winnerno);
-            return winnerno;
-        }
+//        public static int calcResult(int x, int y,int a, int b){             //function to calculate total of 2 passed ints
+//            int winnerno = 0;
+//            if(x ==  b){
+//                winnerno = 1;
+//            }
+//            else if(y ==  b){
+//                winnerno = 2;
+//            }
+//            else if(a ==  b){
+//                winnerno = 3;
+//            }
+//            else{
+//                winnerno = 4;
+//            }
+//            System.out.println(winnerno);
+//            return winnerno;
+//        }
 }
