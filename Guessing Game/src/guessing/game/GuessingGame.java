@@ -16,8 +16,8 @@ public class GuessingGame {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        GuessGame Guess = new GuessGame();
-        Guess.startGame();
+        GuessGame Guess = new GuessGame();   //create a new guessgame
+        Guess.startGame();                   //create a new startgame
     }
     
 }

@@ -11,23 +11,23 @@ package guessing.game;
  */
 public class Winner {
     
-        public static int gamewinner(int x){
+        public static int gamewinner(int x){   //pass the winnerno to this class 
            
-            switch (x){
+            switch (x){           //more simple version of an if statement
             case 1:
-                System.out.println("PLayer 1 wins!");
+                System.out.println("PLayer 1 wins!");      //display message for players
                 break;
             case 2:
-                System.out.println("PLayer 2 wins!");
+                System.out.println("PLayer 2 wins!");       //display message for players
                 break;
             case 3:
-                System.out.println("PLayer 3 wins!");
+                System.out.println("PLayer 3 wins!");       //display message for players
                 break;
             default:
-                System.out.println("You have all lost!");
+                System.out.println("You have all lost!");       //display message for players
                 break;
         }
-            return x;
+            return x;    //return the winner no
                     
         }
 }
